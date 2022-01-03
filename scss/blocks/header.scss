@@ -1,0 +1,152 @@
+.header {
+    background-color: $black;
+    min-height: 75px;
+
+
+    .header-parts__wrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-logo__wrp {
+        display: flex;
+    }
+
+    .header-burger__wrp {
+        display: flex;
+    }
+
+    .header__logo {
+        max-width: 44px;
+        max-height: 38px;
+        margin: 18px 40px 0 18px;
+    }
+
+    .header__search {
+        padding: 0;
+        border: none;
+        background: transparent;
+        margin: 28px 0 20px 0;
+        max-width: 26px;
+        max-height: 26px;
+        outline: none;
+    }
+
+    .header-search__img {
+        min-width: 26px;
+        min-height: 26px;
+        fill: $white-color;
+    }
+
+    .header__search:hover .header-search__img {
+        fill: $pink-color;
+    }
+
+    .header__search:focus .header-search__img {
+        border: 1px solid $pink-color;
+    }
+
+    .header__menu {
+        padding: 0;
+        border: none;
+        background: transparent;
+        max-width: 32px;
+        max-height: 23px;
+        margin: 31px 34px 21px 0;
+        outline: none;
+    }
+
+    .header-menu__img {
+        max-width: 32px;
+        max-height: 23px;
+        fill: $white-color;
+    }
+
+    .header__menu:hover .header-menu__img {
+        fill: $pink-color;
+    }
+
+    .header__menu:focus .header-menu__img {
+        border: 1px solid $pink-color;
+    }
+
+    .header__profile {
+        max-width: 29px;
+        max-height: 29px;
+        margin: 27px 33px 19px 0;
+        outline: none;
+    }
+
+    .header-profile__img {
+        fill: $white-color;
+    }
+
+    .header__profile:hover .header-profile__img {
+        fill: $pink-color;
+    }
+
+    .header__profile:focus .header-profile__img {
+        border: 1px solid $pink-color;
+    }
+
+    .header__basket {
+        min-width: 39px;
+        max-height: 32px;
+        margin: 27px 0 19px 0;
+        outline: none;
+    }
+
+    .header-basket__img {
+        max-width: 32px;
+        max-height: 29px;
+        fill: $white-color;
+    }
+
+    .header__basket:hover .header-basket__img {
+        fill: $pink-color;
+    }
+
+    .header__basket:focus .header-basket__img {
+        border: 1px solid $pink-color;
+    }
+
+    .header-basket-circle__wrp {
+        max-width: 19px;
+        max-height: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        bottom: 35px;
+        left: 20px;
+        outline: none;
+    }
+
+    .header-basket__circle {
+        max-width: 19px;
+        max-height: 19px;
+        fill: $pink-color;
+    }
+
+    .header-basket-circle__wrp:hover .header-basket__circle {
+        fill: $white-color;
+    }
+
+    .header-basket__count {
+        color: #FFFFFF;
+        max-width: 7px;
+        max-height: 14px;
+        display: flex;
+        align-self: center;
+        position: absolute;
+    }
+
+    .header-basket__count:hover {
+        color: $pink-color;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}
