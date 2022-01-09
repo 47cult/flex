@@ -1,7 +1,7 @@
 .footer {
     background-color: #222224;
 
-    .footer-bckg__content {
+    .footer__bckg-content {
         display: flex;
         background: url(../img/footer-image.jpg);
         background-repeat: no-repeat;
@@ -20,13 +20,13 @@
         align-items: center;
     }
 
-    .footer-figure__img {
+    .footer__figure-img {
         display: flex;
         align-self: center;
         padding: 0 0 30px 0;
     }
 
-    .footer-figure__desc {
+    .footer__figure-desc {
         width: 359px;
         min-height: 99px;
         font-size: 20px;
@@ -37,7 +37,7 @@
         text-align: center;
     }
 
-    .form__subscribe-text {
+    .footer__form-subscribe-text {
         display: flex;
         flex-direction: column;
         width: 557px;
@@ -51,20 +51,20 @@
         text-transform: uppercase;
     }
 
-    .form__text {
+    .footer__form-text {
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
     }
 
-    .form__wrp {
+    .footer__form-wrp {
         display: flex;
         justify-content: center;
         min-height: 49px;
         padding: 32px 0 0 0;
     }
 
-    .form__input {
+    .footer__form-input {
         padding: 0 0 0 22px;
         width: 256px;
         background-color: #E1E1E1;
@@ -72,31 +72,31 @@
         border-radius: 22px 0 0 22px;
     }
 
-    .form__input:focus {
+    .footer__form-input:focus {
         border: 1px solid $pink-color;
         outline: none;
     }
 
-    .form__input:hover {
+    .footer__form-input:hover {
         background-color: #cecdcd
     }
 
-    .form__btn {
+    .footer__form-btn {
         width: 100px;
         background: $pink-color;
         border: none;
         border-radius: 0 22px 22px 0;
     }
 
-    .form__btn:hover {
+    .footer__form-btn:hover {
         background: #E05C6E;
     }
 
-    .form__btn:active {
+    .footer__form-btn:active {
         opacity: 0.33;
     }
 
-    .form-btn__link {
+    .footer__form-btn-link {
         text-align: center;
         text-decoration: none;
         font-size: 14px;
@@ -106,7 +106,7 @@
         color: #FFFFFF;
     }
 
-    .footer-bckg__end {
+    .footer__bckg-end {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -132,11 +132,11 @@
         flex-grow: 0.02;
     }
 
-    .footer-list__item:hover {
+    .footer__list-item:hover {
         opacity: 0.50;
     }
 
-    .footer-list__item:active {
+    .footer__list-item:active {
         opacity: 0.33;
     }
 }

@@ -1,11 +1,11 @@
-.main-section__brand {
+.brand {
     display: flex;
 
-    .main-section-brand__img {
+    .brand__img {
         background-color: rgba(113, 103, 105, 0.08);
     }
 
-    .brand-title__wrp {
+    .brand__title-wrp {
         flex-grow: 1;
         background-color: $pink-bkg;
         display: flex;
@@ -13,7 +13,7 @@
         padding: 0 0 0 92px;
     }
 
-    .main-section-brand__title {
+    .brand__title {
         font-size: 48px;
         font-weight: 900;
         line-height: 58px;
@@ -21,7 +21,7 @@
         position: relative;
     }
 
-    .main-section-brand__title:before {
+    .brand__title:before {
         content: '';
         width: 12px;
         height: 92px;

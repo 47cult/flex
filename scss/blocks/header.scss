@@ -3,17 +3,17 @@
     min-height: 75px;
 
 
-    .header-parts__wrp {
+    .header__parts-wrp {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .header-logo__wrp {
+    .header__logo-wrp {
         display: flex;
     }
 
-    .header-burger__wrp {
+    .header__burger-wrp {
         display: flex;
     }
 
@@ -33,17 +33,17 @@
         outline: none;
     }
 
-    .header-search__img {
+    .header__search-img {
         min-width: 26px;
         min-height: 26px;
         fill: $white-color;
     }
 
-    .header__search:hover .header-search__img {
+    .header__search:hover .header__search-img {
         fill: $pink-color;
     }
 
-    .header__search:focus .header-search__img {
+    .header__search:focus .header__search-img {
         border: 1px solid $pink-color;
     }
 
@@ -57,17 +57,17 @@
         outline: none;
     }
 
-    .header-menu__img {
+    .header__menu-img {
         max-width: 32px;
         max-height: 23px;
         fill: $white-color;
     }
 
-    .header__menu:hover .header-menu__img {
+    .header__menu:hover .header__menu-img {
         fill: $pink-color;
     }
 
-    .header__menu:focus .header-menu__img {
+    .header__menu:focus .header__menu-img {
         border: 1px solid $pink-color;
     }
 
@@ -78,15 +78,15 @@
         outline: none;
     }
 
-    .header-profile__img {
+    .header__profile-img {
         fill: $white-color;
     }
 
-    .header__profile:hover .header-profile__img {
+    .header__profile:hover .header__profile-img {
         fill: $pink-color;
     }
 
-    .header__profile:focus .header-profile__img {
+    .header__profile:focus .header__profile-img {
         border: 1px solid $pink-color;
     }
 
@@ -97,21 +97,21 @@
         outline: none;
     }
 
-    .header-basket__img {
+    .header__basket-img {
         max-width: 32px;
         max-height: 29px;
         fill: $white-color;
     }
 
-    .header__basket:hover .header-basket__img {
+    .header__basket:hover .header__basket-img {
         fill: $pink-color;
     }
 
-    .header__basket:focus .header-basket__img {
+    .header__basket:focus .header__basket-img {
         border: 1px solid $pink-color;
     }
 
-    .header-basket-circle__wrp {
+    .header__basket-circle-wrp {
         max-width: 19px;
         max-height: 19px;
         display: flex;
@@ -123,17 +123,17 @@
         outline: none;
     }
 
-    .header-basket__circle {
+    .header__basket-circle {
         max-width: 19px;
         max-height: 19px;
         fill: $pink-color;
     }
 
-    .header-basket-circle__wrp:hover .header-basket__circle {
+    .header__basket-circle-wrp:hover .header__basket-circle {
         fill: $white-color;
     }
 
-    .header-basket__count {
+    .header__basket-count {
         color: #FFFFFF;
         max-width: 7px;
         max-height: 14px;
@@ -142,7 +142,7 @@
         position: absolute;
     }
 
-    .header-basket__count:hover {
+    .header__basket-count:hover {
         color: $pink-color;
     }
 

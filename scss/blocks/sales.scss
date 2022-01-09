@@ -1,9 +1,9 @@
-.main-section__sales {
+.sales {
     display: flex;
     justify-content: space-between;
     margin-top: 63px;
 
-    .main-sales__item {
+    .sales__item {
         width: 368px;
         min-height: 260px;
         display: flex;
@@ -13,33 +13,33 @@
         flex-direction: column;
     }
 
-    .main-section-sales__list {
+    .sales__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0;
     }
 
-    .main-sales-list__women {
+    .sales__list-women {
         background: url(../img/women-sales.jpg);
     }
 
-    .main-sales-list__men {
+    .sales__list-men {
         background: url(../img/men-sales.jpg);
     }
 
-    .main-sales-list__kids {
+    .sales__list-kids {
         background: url(../img/kids-sales.jpg);
     }
 
-    .main-sales-list__trend {
+    .sales__list-trend {
         background: url(../img/trend-sales.jpg);
         width: 100%;
         min-height: 180px;
         margin-top: 30px;
     }
 
-    .main-sales-item__title {
+    .sales__item-title {
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -49,7 +49,7 @@
         text-transform: uppercase;
     }
 
-    .main-sales-item__text {
+    .sales__item-text {
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
