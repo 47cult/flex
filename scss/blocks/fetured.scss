@@ -1,0 +1,175 @@
+.fetured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 95px;
+
+    .fetured__title {
+        margin: 97px 0 6px 0;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        color: $black;
+    }
+
+    .fetured__text {
+        margin: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        color: #9F9F9F;
+    }
+
+    .fetured__list {
+        margin: 48px 0 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fetured__item {
+        width: 360px;
+        min-height: 581px;
+        background-color: #F8F8F8;
+        margin: 0 0 30px 0;
+    }
+
+    .fetured__item-title {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        color: #000000;
+        text-transform: uppercase;
+        padding: 24px 0 12px 18px;
+    }
+
+    .fetured__item-description {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        color: #5D5D5D;
+        padding: 0 0 18px 18px;
+    }
+
+    .fetured__item-price {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: $pink-color;
+        text-decoration: none;
+        padding: 0 0 20px 18px;
+    }
+
+    .fetured__item-price:hover {
+        color: #dc6676;
+    }
+
+    .fetured__item-price:active {
+        color: #F1E4E6;
+    }
+
+    .fetured__button {
+        width: 211px;
+        min-height: 47px;
+        border: 1px solid #FF6A6A;
+        background: transparent;
+        color: rgba(242, 99, 118, 1);
+        padding: 0;
+    }
+
+    .fetured__button:hover {
+        background: rgba(241, 109, 127, 1);
+    }
+
+    .fetured__button:active {
+        opacity: 0.33;
+    }
+
+    .fetured__button-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: rgba(242, 99, 118, 1);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        width: 211px;
+        height: 47px;
+    }
+
+    .fetured__button-link:hover {
+        color: rgba(255, 255, 255, 1);
+        width: 211px;
+        height: 47px;
+    }
+
+    .fetured__img-wrapper {
+        position: relative;
+    }
+
+    .fetured__img-wrapper:before {
+        display: none;
+    }
+
+    .fetured__img-wrapper:before {
+        content: '';
+        width: 100%;
+        height: 420px;
+        background: url(../img/sales-overlay-bckg.png);
+        position: absolute;
+        top: 0;
+    }
+
+    .fetured__overlay-btn {
+        display: none;
+        background: transparent;
+        width: 138px;
+        height: 43px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fetured__btn-basket {
+        position: relative;
+        left: -42px;
+        width: 26px;
+        height: 24px;
+        padding: 10px 0 8px 0;
+    }
+
+    .fetured__btn-text {
+        position: absolute;
+        left: 51px;
+        top: 14px;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    .fetured__item:hover .fetured__overlay-btn,
+    .fetured__item:hover .fetured__img-wrapper:before {
+        display: block;
+    }
+
+    .fetured__overlay-btn:hover {
+        background: $pink-color;
+    }
+
+    .fetured__overlay-btn:active {
+        background: #f05065;
+    }
+}

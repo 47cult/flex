@@ -1,0 +1,61 @@
+.sales {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+
+    .sales__item {
+        width: 368px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        flex-direction: column;
+    }
+
+    .sales__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .sales__list-women {
+        background: url(../img/women-sales.jpg);
+    }
+
+    .sales__list-men {
+        background: url(../img/men-sales.jpg);
+    }
+
+    .sales__list-kids {
+        background: url(../img/kids-sales.jpg);
+    }
+
+    .sales__list-trend {
+        background: url(../img/trend-sales.jpg);
+        width: 100%;
+        min-height: 180px;
+        margin-top: 30px;
+    }
+
+    .sales__item-title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .sales__item-text {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        color: rgb(241, 109, 127);
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
