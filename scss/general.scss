@@ -8,6 +8,14 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include phone {
+        width: 375px;
+    }
 }
 
 .visually-hidden {
@@ -21,4 +29,9 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+::placeholder {
+    color: $grey-color;
+    opacity: 1;
 }

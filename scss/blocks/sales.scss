@@ -3,6 +3,14 @@
     justify-content: space-between;
     margin-top: 63px;
 
+    @include tablet {
+        margin-top: 20px;
+    }
+
+    @include phone {
+        margin-top: 64px;
+    }
+
     .sales__item {
         width: 368px;
         min-height: 260px;
@@ -11,6 +19,17 @@
         justify-content: center;
         border: 1px solid;
         flex-direction: column;
+
+        @include tablet {
+            width: 30%;
+            min-height: 167px;
+        }
+
+        @include phone {
+            width: 100%;
+            min-height: 248px;
+            margin: 0 0 32px 0;
+        }
     }
 
     .sales__list {
@@ -18,6 +37,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0;
+
+        @include tablet {
+            margin: 0 16px;
+        }
     }
 
     .sales__list-women {
@@ -37,6 +60,25 @@
         width: 100%;
         min-height: 180px;
         margin-top: 30px;
+
+        @include tablet {
+            min-height: 116px;
+            margin-top: 20px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        @include phone {
+            min-height: 111px;
+            margin: 0;
+        }
+    }
+
+    .sales__item-bckg {
+        @include tablet {
+            background-position: center;
+            background-size: cover;
+        }
     }
 
     .sales__item-title {

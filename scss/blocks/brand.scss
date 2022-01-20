@@ -1,8 +1,22 @@
 .brand {
     display: flex;
+    position: relative;
+
+    @include phone {
+        min-height: 363px;
+    }
 
     .brand__img {
         background-color: rgba(113, 103, 105, 0.08);
+
+        @include tablet {
+            width: 50%;
+            height: 50%;
+        }
+
+        @include phone {
+            display: none;
+        }
     }
 
     .brand__title-wrp {
@@ -11,6 +25,15 @@
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
+        min-height: 100%;
+
+        @include tablet {
+            padding: 0 0 0 68px;
+        }
+
+        @include phone {
+            padding: 0 0 0 83px;
+        }
     }
 
     .brand__title {
@@ -19,6 +42,14 @@
         line-height: 58px;
         text-transform: uppercase;
         position: relative;
+
+        @include tablet {
+            @include font(44px, 53px, 900);
+        }
+
+        @include phone {
+            @include font(38px, 46px, 900);
+        }
     }
 
     .brand__title:before {
@@ -30,6 +61,9 @@
         left: -30px;
         bottom: 0px;
 
+        @include phone {
+            height: 61px;
+        }
     }
 
     .brand__subtitle {
@@ -38,9 +72,20 @@
         font-weight: 700;
         line-height: 38px;
         display: block;
+
+        @include tablet {
+            @include font(24px, 29px, 700)
+        }
+
+        @include phone {
+            @include font(20px, 24px, 700)
+        }
     }
 
     .brand__subtitle-link {
         color: $pink-color;
     }
+
+
+
 }
