@@ -8,6 +8,3 @@ button.addEventListener('click', function(nav){
   navigation.classList.toggle('display-block');
   wrp.classList.toggle('display-block');
 });
-
-let button = document.getElementById('close');
-
