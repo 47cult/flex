@@ -7,6 +7,12 @@
     background: #ffffff;
     width: 1141px;
     margin: -50px auto 0;
+    border: 1px solid #EAEAEA;
+
+    @include tablet {
+        width: 100%;
+        margin: 0;
+    }
 
     .collection__title {
         padding: 64px 0 12px;
@@ -20,6 +26,7 @@
         height: 3px;
         color: #EF5B70;
         opacity: 1;
+        margin: 0;
     }
 
     .collection__subtitle {
@@ -27,6 +34,10 @@
         @include font(18px, 21px, 300);
         color: #4D4D4D;
         text-transform: uppercase;
+
+        @include phone {
+            padding: 12px 0 31px;
+        }
     }
 
     .collection__text {
@@ -35,6 +46,16 @@
         @include font(14px, 17px, 300);
         color: #5E5E5E;
         text-align: center;
+
+        @include phone {
+            width: 89%;
+        }
+    }
+
+    .collection__br {
+        @include phone {
+            display: none;
+        }
     }
 
     .collection__link {
@@ -42,15 +63,31 @@
         @include font(24px, 29px, 300);
         color: #EF5B70;
         text-decoration: none;
+
+        @include phone {
+            padding: 0 0 32px;
+        }
     }
 
     .collection__line-grey {
         width: 641px;
         border: 1px solid #EAEAEA;
+        margin: 0;
+
+        @include phone {
+            width: 47%;
+        }
     }
 
     .collection__dropdown-wrp {
         display: flex;
+        padding: 65px 0 49px;
+
+        @include phone {
+            padding: 49px 0 65px;
+            width: 82%;
+            justify-content: space-around;
+        }
     }
 
     .collection__btn-drop {
@@ -58,18 +95,108 @@
         @include font(14px, 17px);
         color: #6F6E6E;
         text-transform: uppercase;
+
+        @include phone {
+            @include font(10px, 12px);
+            padding: 0;
+            text-align: start;
+        }
     }
 
-    .collection__btn-drop:focus+.collection__icon {
-        svg {
-            color: $pink-color;
-        }
+    .collection__btn-drop:hover {
+        color: rgba(111, 110, 110, 0.638);
+    }
 
+    .collection__btn-drop:focus,
+    .collection__btn-drop:active {
+        color: $pink-color;
+        box-shadow: none;
     }
 
     .collection__icon {
         margin: 0 0 2px 9px;
+
+        @include phone {
+            width: 13px;
+            height: 13px;
+        }
+    }
+
+    .collection__dropdown-item-red::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px inset #d04b5e;
+        background: #d61c38;
+        left: 120px;
+    }
+
+    .collection__dropdown-item-purple::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px inset #d04b5e;
+        background: #8e26b1;
+        left: 120px;
+    }
+
+    .collection__dropdown-item-black::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px inset #d04b5e;
+        background: #262525;
+        left: 120px;
+    }
+
+    .collection__dropdown-item-white::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px inset #d04b5e;
+        background: #f7f6f6;
+        left: 120px;
+    }
+
+    .collection__dropdown-menu {
+        min-width: 3rem;
+        transform: translateX(100px);
+    }
+
+    .collection__btn {
+        display: flex;
+        align-items: center;
+        width: 211px;
+        background: transparent;
+        border: 1px solid #FF6A6A;
+        @include font(16px, 19px);
+        color: #F26376;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 65px;
+    }
+
+    .collection__btn:hover {
+        background: $pink-color;
+        color: $white-color;
+        fill: $white-color;
+    }
+
+    .collection__btn:active {
+        opacity: 0.7;
+    }
+
+    .collection__basket {
+        fill: #EF5B70;
+        margin: 15px 23px 9px;
     }
 
 
+    .collection__btn:hover .collection__basket {
+        fill: $white-color;
+    }
 }

@@ -7,6 +7,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            margin: 0 16px;
+            padding: 0;
+            max-width: 768px
+        }
+
+        @include phone {
+            flex-direction: column;
+            justify-content: space-evenly
+        }
     }
 
     .arrivals__title {
@@ -21,6 +32,14 @@
         text-transform: uppercase;
         color: $grey-color;
         text-decoration: none;
+    }
+
+    .arrivals__subtitle a:hover {
+        opacity: 0.5;
+    }
+
+    .arrivals__subtitle a:active {
+        color: $pink-color;
     }
 
     .arrivals__item {

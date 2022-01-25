@@ -1,0 +1,163 @@
+.perks {
+    display: flex;
+    padding: 64px 0 96px;
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    .perks__form {
+        display: flex;
+        flex-direction: column;
+        width: 359px;
+        padding: 0 128px 0 0;
+
+        @include tablet {
+            padding: 0 23px 0 16px;
+        }
+
+        @include phone {
+            padding: 0 6px;
+            width: 100%
+        }
+
+        .perks__form-title {
+            @include font(16px, 19px, 300);
+            color: $black;
+            padding: 0 0 20px;
+        }
+
+        .perks__form-input-text {
+            width: 342px;
+            min-height: 44px;
+            border: 1px solid #A4A4A4;
+            margin: 0 0 20px;
+            padding: 0 0 0 17px;
+        }
+
+        .perks__form-input-text::placeholder {
+            @include font(13px, 16px, 300);
+            color: rgba(177, 177, 177, 1);
+        }
+
+        .perks__form-input-last {
+            margin: 0 0 31px;
+        }
+
+        .perks__form-input-password {
+            margin: 0 0 15px;
+        }
+
+        .perks__form-radio-group {
+            padding: 0 0 33px;
+
+            .perks__form-none {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 17px;
+                height: 17px;
+                border: 1px solid #A4A4A4;
+                border-radius: 10px;
+                box-sizing: border-box;
+                margin: 0 10px -4px 0;
+            }
+
+            .perks__form-none:checked {
+                background: url(../img/form-radio.png) 0 0 no-repeat;
+            }
+
+            .perks__form-none:hover,
+            .perks__form-radio:hover {
+                opacity: 0.7;
+            }
+
+            .perks__form-radio {
+                position: relative;
+                @include font (11px, 13px, 300);
+                color: #000000;
+                text-align: center;
+                padding: 0 20px 0 0;
+            }
+        }
+
+        .perks__form-text {
+            @include font(13px, 16px, 300);
+            color: rgba(177, 177, 177, 1);
+            padding: 0 0 39px;
+        }
+
+        .perks__form-button {
+            width: 167px;
+            height: 50px;
+            appearance: none;
+            border: none;
+            background: $pink-color;
+        }
+
+        .perks__form-button:hover {
+            background: #f58795;
+        }
+
+        .perks__form-button:active {
+            background: #f7a9b3;
+        }
+
+        .perks__form-btn-link {
+            @include font(14px, 17px);
+            color: #FFFFFF;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .perks__form-btn-icon {
+            padding: 0 0 0 20px;
+            fill: #FFFFFF;
+        }
+    }
+
+    .perks__title {
+        @include font(24px, 29px, 300);
+        padding: 0 0 22px;
+        color: $black;
+        text-transform: uppercase;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    .perks__description {
+        @include font(24px, 29px, 300);
+        color: $black;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    .perks__list {
+        padding: 21px 0 0;
+    }
+
+    .perks__list-item {
+        position: relative;
+        @include font(24px, 29px, 300);
+        padding: 0 0 16px 45px;
+        color: $black;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    .perks__list-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 23px;
+        width: 20px;
+        height: 16px;
+        background-image: url(../img/perks-icon.svg);
+    }
+}
