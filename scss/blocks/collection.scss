@@ -1,0 +1,75 @@
+.collection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background: #ffffff;
+    width: 1141px;
+    margin: -50px auto 0;
+
+    .collection__title {
+        padding: 64px 0 12px;
+        @include font(14px, 17px, 300);
+        color: $pink-color;
+        text-transform: uppercase;
+    }
+
+    .collection__line-red {
+        width: 63px;
+        height: 3px;
+        color: #EF5B70;
+        opacity: 1;
+    }
+
+    .collection__subtitle {
+        padding: 12px 0 48px;
+        @include font(18px, 21px, 300);
+        color: #4D4D4D;
+        text-transform: uppercase;
+    }
+
+    .collection__text {
+        width: 555px;
+        padding: 0 0 32px;
+        @include font(14px, 17px, 300);
+        color: #5E5E5E;
+        text-align: center;
+    }
+
+    .collection__link {
+        padding: 0 0 65px;
+        @include font(24px, 29px, 300);
+        color: #EF5B70;
+        text-decoration: none;
+    }
+
+    .collection__line-grey {
+        width: 641px;
+        border: 1px solid #EAEAEA;
+    }
+
+    .collection__dropdown-wrp {
+        display: flex;
+    }
+
+    .collection__btn-drop {
+        border: none;
+        @include font(14px, 17px);
+        color: #6F6E6E;
+        text-transform: uppercase;
+    }
+
+    .collection__btn-drop:focus+.collection__icon {
+        svg {
+            color: $pink-color;
+        }
+
+    }
+
+    .collection__icon {
+        margin: 0 0 2px 9px;
+    }
+
+
+}
