@@ -1,0 +1,26 @@
+.registration {
+    display: flex;
+    align-items: center;
+    min-height: 148px;
+    background-color: #F8F3F4;
+
+    .registration__title {
+        padding: 60px 0;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 29px;
+        color: #F16D7F;
+        text-transform: uppercase;
+
+        @include tablet {
+            padding: 60px 16px;
+        }
+
+        @include phone {
+            display: flex;
+            padding: 0;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.arrivals {
+    display: flex;
+    background-color: $pink-bkg;
+    min-height: 148px;
+
+    .arrivals__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            margin: 0 16px;
+            padding: 0;
+            max-width: 768px
+        }
+
+        @include phone {
+            flex-direction: column;
+            justify-content: space-evenly
+        }
+    }
+
+    .arrivals__title {
+        @include font(24px, 29px);
+        text-transform: uppercase;
+        color: $pink-color;
+    }
+
+    .arrivals__subtitle,
+    a {
+        @include font(14px, 17px, 300);
+        text-transform: uppercase;
+        color: $grey-color;
+        text-decoration: none;
+    }
+
+    .arrivals__subtitle a:hover {
+        opacity: 0.5;
+    }
+
+    .arrivals__subtitle a:active {
+        color: $pink-color;
+    }
+
+    .arrivals__item {
+        @include font(14px, 17px, 700);
+        color: $pink-color;
+    }
+}
