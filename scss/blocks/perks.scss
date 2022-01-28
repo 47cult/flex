@@ -17,8 +17,8 @@
         }
 
         @include phone {
-            padding: 0 6px;
-            width: 100%
+            padding: 0 0 40px 6px;
+            width: 98%
         }
 
         .perks__form-title {
@@ -116,6 +116,12 @@
         }
     }
 
+    .perks__info-wrp {
+        @include phone {
+            padding: 0 0 0 6px;
+        }
+    }
+
     .perks__title {
         @include font(24px, 29px, 300);
         padding: 0 0 22px;
@@ -159,5 +165,10 @@
         width: 20px;
         height: 16px;
         background-image: url(../img/perks-icon.svg);
+
+        @include tablet {
+            bottom: 18px;
+        }
     }
+
 }

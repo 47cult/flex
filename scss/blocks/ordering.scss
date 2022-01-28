@@ -1,0 +1,306 @@
+.ordering {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0 128px;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 59px 0 128px;
+    }
+
+    @include phone {
+        padding: 39px 0 96px;
+    }
+
+    .ordering__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include tablet {
+            width: 96%;
+        }
+
+        @include phone {
+            width: 95%;
+            gap: 32px;
+        }
+
+        .ordering__card {
+            display: flex;
+            position: relative;
+            width: 652px;
+            -webkit-box-shadow: 13px 18px 21px -3px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 13px 18px 21px -3px rgba(34, 60, 80, 0.2);
+            box-shadow: 13px 18px 21px -3px rgba(34, 60, 80, 0.2);
+
+            @include tablet {
+                width: 100%;
+            }
+
+            @include phone {
+                max-height: 188px;
+            }
+
+            .ordering__card-img {
+                width: 262px;
+
+                @include phone {
+                    width: 40%;
+                }
+            }
+
+            .ordering__card-info-wrp {
+                display: flex;
+                flex-direction: column;
+                padding: 22px 0 0 31px;
+                gap: 42px;
+
+                @include phone {
+                    padding: 14px 0 0 17px;
+                    gap: 26px
+                }
+            }
+
+            .ordering__card-description {
+                @include font(24px, 29px);
+                color: $black;
+                text-transform: uppercase;
+
+                @include phone {
+                    @include font(16px, 19px);
+                }
+            }
+
+            .ordering__card-subitem {
+                @include font(22px, 26px);
+                color: #575757;
+
+                @include phone {
+                    @include font(14px, 17px);
+                }
+            }
+
+            .ordering__card-text-red {
+                color: $pink-color;
+            }
+
+            .ordering__card-input {
+                box-sizing: border-box;
+                width: 43px;
+                height: 24px;
+                border: 1px solid #EAEAEA;
+                color: #656565;
+                text-align: center;
+                padding: 0;
+            }
+
+            .ordering__card-button {
+                position: absolute;
+                left: 92%;
+                bottom: 85%;
+                border: none;
+                background: transparent;
+
+                .ordering__card-button-icon {
+                    @include phone {
+                        width: 10px;
+                        height: 11px;
+                    }
+                }
+
+                .ordering__card-button-icon:hover {
+                    fill: $pink-color;
+                }
+
+                .ordering__card-button-icon:active {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .ordering__cards-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 0 0;
+
+            @include tablet {
+                padding: 22px 0 0;
+                justify-content: space-evenly;
+            }
+
+            @include phone {
+                padding: 0;
+                justify-content: space-between;
+            }
+
+            .ordering__cards-button {
+                min-width: 224px;
+                min-height: 49px;
+                border: 1px solid #A4A4A4;
+                background: transparent;
+                @include font(14px, 17px, 300);
+                color: $black;
+                text-transform: uppercase;
+                padding: 0;
+
+                @include phone {
+                    min-width: 175px;
+                    min-height: 33px;
+                    text-transform: none;
+                    @include font(12px, 14px, 400);
+                }
+            }
+
+            .ordering__cards-button:hover {
+                background: $pink-color;
+                color: $white-color;
+            }
+
+            .ordering__cards-button:active {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .ordering__wrp {
+        padding: 17px 0 0 0;
+
+        @include tablet {
+            display: flex;
+            padding: 64px 0 0 0;
+        }
+
+        @include phone {
+            flex-direction: column;
+            padding: 48px 0 0 0;
+        }
+
+        .ordering__form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 57px 0;
+
+            @include tablet {
+                padding: 0 15px 0 0;
+            }
+
+            @include phone {
+                padding: 0;
+            }
+
+            .ordering__form-description {
+                @include font(16px, 19px, 300);
+                color: $black;
+                text-transform: uppercase;
+            }
+
+            .ordering__form-list-input {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 0 24px;
+
+                .ordering__form-input {
+                    width: 342px;
+                    min-height: 44px;
+                    border: 1px solid #A4A4A4;
+                    @include font(13px, 16px, 300);
+                    color: $black;
+                    padding: 0 0 0 17px;
+                }
+
+                .ordering__form-input::placeholder {
+                    @include font(13px, 16px, 300);
+                    color: rgba(177, 177, 177, 1);
+                }
+            }
+
+            .ordering__form-button {
+                width: 100px;
+                min-height: 34px;
+                border: 1px solid #A4A4A4;
+                background: transparent;
+                @include font(11px, 13px, 300);
+                color: #4A4A4A;
+                text-transform: uppercase;
+                padding: 0;
+            }
+
+            .ordering__form-button:hover {
+                background: $pink-color;
+                color: $white-color;
+            }
+
+            .ordering__form-button:active {
+                opacity: 0.7;
+            }
+        }
+
+        .ordering__check {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 360px;
+            background: #F5F3F3;
+            padding: 39px 0 42px;
+
+            @include tablet {
+                max-height: 133px;
+                margin: 39px 0 0 0;
+            }
+
+            .ordering__check-description {
+                @include font(11px, 13px);
+                color: #4A4A4A;
+                text-transform: uppercase;
+                padding: 0 34px 12px 0;
+
+                .ordering__check-text-space {
+                    padding: 0 0 0 24px;
+                }
+            }
+
+            .ordering__check-text {
+                @include font(16px, 19px, 300);
+                color: $black;
+                text-transform: uppercase;
+                padding: 0 37px 21px 0;
+
+                .ordering__check-text-pink {
+                    @include font(16px, 19px, 700);
+                    color: $pink-color;
+                    padding: 0 0 0 26px;
+                }
+            }
+
+            .ordering__check-line {
+                width: 275px;
+                height: 1px;
+                background: #E2E2E2;
+                border: none;
+                margin: 0 42px 0 0;
+            }
+
+            .ordering__check-button {
+                width: 273px;
+                min-height: 50px;
+                border: none;
+                background: $pink-color;
+                margin: 17px 43px 0 0;
+                @include font(16px, 19px, 300);
+                color: rgba(255, 255, 255, 1);
+                text-transform: uppercase;
+            }
+
+            .ordering__check-button:hover {
+                background: #f58795;
+            }
+
+            .ordering__check-button:active {
+                background: #f7a9b3;
+            }
+        }
+    }
+}
