@@ -1,0 +1,20 @@
+.shcart {
+    display: flex;
+    align-items: center;
+    background: #F8F3F4;
+    min-height: 148px;
+}
+
+.shcart__description {
+    @include font(24px, 29px);
+    color: $pink-color;
+    text-transform: uppercase;
+
+    @include tablet {
+        padding: 0 0 0 16px;
+    }
+
+    @include phone {
+        text-align: center;
+    }
+}

@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='./js/main.js' defer></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/registration.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/cart.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-
-
     <body>
         <header class="header">
             <div class="container">
@@ -86,63 +83,66 @@
     <div class="header__nav-wrp" id="wrp"></div>
         </header>
         <main>
-        <section class="registration">
-            <div class="container">
-            <h1 class="registration__title">registration</h1>
-        </div>
-        </section>
-        <section class="perks container">
-            <form class="perks__form" action="#">
-                <fieldset>
-                <legend class="perks__form-title">Your name</legend>
-                <label>
-                    <input class="perks__form-input-text" id="first-name" type="text" required placeholder="First Name">
-                    <span class="visually-hidden" for="first-name">First Name</span>
-                </label>
-                <label>
-                    <input class="perks__form-input-text perks__form-input-last" type="text" required placeholder="Last Name">
-                    <span class="visually-hidden">Last Name</span>
-                </label>
-                <div class="perks__form-radio-group">
-                <input class="perks__form-none" type="radio" id="contactChoice1" name="contact" value="male">
-                <label class="perks__form-radio" for="contactChoice1">Male</label>
-                <input class="perks__form-none" type="radio" id="contactChoice2" name="contact" value="female">
-                <label class="perks__form-radio" for="contactChoice2">Female</label>
+            <section class="shcart">
+                <div class="shcart__wrp container">
+                <h1 class="shcart__description">shopping cart</h1>
+            </div>
+            </section>
+            <section class="ordering container">
+                <div class="ordering__cards">
+                <div class="ordering__card">
+                    <img class="ordering__card-img" src="./img/cart-man.jpg" alt="man">
+                    <div class="ordering__card-info-wrp">
+                    <h2 class="ordering__card-description">mango  people <br> t-shirt</h2>
+                    <ul class="ordering__card-list">
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Price: <span class="ordering__card-text-red">$300</span></h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Color: Red</h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Size: Xl	</h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Quantity: <input class="ordering__card-input" type="text"></h3></li>
+                    </ul>
                 </div>
+                <button class="ordering__card-button">
+                    <svg class="ordering__card-button-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                        </svg></button>
+                </div>
+                <div class="ordering__card">
+                    <img class="ordering__card-img" src="./img/cart-man-black.jpg" alt="man">
+                    <div class="ordering__card-info-wrp">
+                    <h2 class="ordering__card-description">mango  people <br> t-shirt</h2>
+                    <ul class="ordering__card-list">
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Price: <span class="ordering__card-text-red">$300</span></h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Color: Red</h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Size: Xl	</h3></li>
+                        <li class="ordering__card-item"><h3 class="ordering__card-subitem">Quantity: <input class="ordering__card-input" type="text"></h3></li>
+                    </ul>
+                </div>
+                <button class="ordering__card-button">
+                <svg class="ordering__card-button-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                    </svg></button>
+                </div>
+                <div class="ordering__cards-buttons">
+                <button class="ordering__cards-button">Clear shopping cart</button>
+                <button class="ordering__cards-button">Continue shopping</button>
+            </div>
+            </div>
+            <div class="ordering__wrp">
+            <form class="ordering__form" action="#">
+                <legend class="ordering__form-description">shipping adress</legend>
+                <fieldset class="ordering__form-list-input">
+                    <input class="ordering__form-input" type="text" placeholder="Bangladesh">
+                    <input class="ordering__form-input" type="text" placeholder="State">
+                    <input class="ordering__form-input" type="text" placeholder="Postcode / Zip">
                 </fieldset>
-                <fieldset>
-                <legend class="perks__form-title">Login details</legend>
-                <input class="perks__form-input-text" id="email" type="email" required placeholder="Email">
-                <label class="visually-hidden" for="email">Email</label>
-                <input class="perks__form-input-text perks__form-input-password" id="password" type="password" required placeholder="Password">
-                <label class="visually-hidden" for="password">Password</label>
-                </fieldset>
-                <legend class="perks__form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</legend>
-                <button class="perks__form-button" type="submit"><a class="perks__form-btn-link" href="#">join now <svg class="perks__form-btn-icon" width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
-                    <path clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
-                    <path clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
-                    </svg></a></button>
+                <button class="ordering__form-button" type="submit">get a quote</button>
             </form>
-            <div class="perks__info-wrp">
-            <h2 class="perks__title">loyalty has its perks</h2>
-            <p class="perks__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-            <ul class="perks__list">
-                <li class="perks__list-item perks__list-item-first">
-                    <h3>15% off welcome offer</h3>
-                </li>
-                <li class="perks__list-item">
-                    <h3>Free shipping, returns and exchanges on all orders</h3>
-                </li>
-                <li class="perks__list-item">
-                    <h3>$10 off a purchase on your birthday</h3>
-                </li>
-                <li class="perks__list-item">
-                    <h3>Early access to products</h3>
-                </li>
-                <li class="perks__list-item">
-                    <h3>Exclusive offers & rewards</h3>
-                </li>
-            </ul>
+            <div class="ordering__check">
+                <h2 class="ordering__check-description">sub total<span class="ordering__check-text-space">$900</span></h2>
+                <h3 class="ordering__check-text">grand total<span class="ordering__check-text-pink">$900</span></h3>
+                <hr class="ordering__check-line">
+                <button class="ordering__check-button">proceed to checkout</button>
+            </div>
         </div>
             </section>
         </main>
@@ -173,5 +173,4 @@
     </div>
     </footer>
 </body>
-
 </html>
