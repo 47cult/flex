@@ -9,6 +9,8 @@
     }
 
     .filter__dropbtn-main {
+        position: relative;
+        z-index: 2;
         border: none;
         background: transparent;
         padding: 0;
@@ -21,14 +23,63 @@
         padding: 0 0 0 11px;
     }
 
+    .filter__dropbtn-main:hover {
+        color: #EF5B70;
+        fill: #EF5B70;
+    }
+
     .filter__dropdown-content-main {
         display: none;
         position: absolute;
         z-index: 1;
+        top: 0;
+        width: 360px;
+        height: 499px;
+        background: #FFFFFF;
+        padding: 32px 0 0;
     }
 
-    .filter__dropdown-main:hover .filter__dropdown-content-main {
-        display: block;
+    // .filter__dropdown-main:hover .filter__dropdown-content-main {
+    //     display: block;
+    // }
+
+    .filter__dropdown-list-main {
+        display: flex;
+        padding: 0 15px 0 17px;
+    }
+
+    .filter__dropdown-button-main {
+        width: 327px;
+        height: 37px;
+        list-style: none;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+        @include font(14px, 17px);
+        color: #6F6E6E;
+        text-transform: uppercase;
+        padding: 8px 0 11px 11px;
+        box-sizing: border-box;
+    }
+
+    .filter__dropdown-button-main:hover {
+        color: #EF5B70;
+    }
+
+    .fitler__dropdown-links-wrp {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0 24px 17px;
+        gap: 11px;
+    }
+
+    .filter__dropdown-link-main {
+        text-decoration: none;
+        @include font(14px, 17px);
+        color: #6F6E6E;
+    }
+
+    .filter__dropdown-link-main:hover {
+        color: #da5569;
     }
 
     .filter__dropdowns-wrp {
@@ -51,18 +102,100 @@
         text-transform: uppercase;
     }
 
+    .filter__dropbtn:hover {
+        color: #da5569;
+    }
+
     .filter__dropbtn-icon {
         fill: #6F6E6E;
         padding: 0 0 0 10px;
     }
 
+    // .filter__dropbtn-icon:hover {
+    //     fill: #da5569;
+    // }
+
     .filter__dropdown-content {
         display: none;
         position: absolute;
+        left: -6px;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        min-width: 79px;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 7px 9px 12px;
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    .filter__dropdown-content-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .filter__dropdown-content-input {
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        width: 20px;
+        height: 15px;
         z-index: 1;
     }
 
+    .filter__dropdown-content-input:checked~.filter__dropdown-content-checkboxcustom {
+        background-size: cover;
+        background-image: url(../img/check-solid.png);
+        border: 1px solid #f12645;
+    }
+
+    .filter__dropdown-content-input:hover~.filter__dropdown-content-checkboxcustom {
+        border: 1px solid #f12645;
+    }
+
+    .filter__dropdown-content-checkboxcustom {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #EBEBEB;
+        position: absolute;
+        right: 26px;
+    }
+
+    .filter__dropdown-content-checkboxcustom:hover {
+        border: 1px solid #f12645;
+    }
+
+    .filter__dropdown-content-input:checked {}
+
+    .filter__dropdown-content-text {
+        display: block;
+        width: 100%;
+        @include font(14px, 16px);
+        text-transform: uppercase;
+        color: #6F6E6E;
+    }
+
+    .filter__dropdown-content-text:hover+.filter__dropdown-content-checkboxcustom {
+        border: 1px solid #f12645;
+    }
+
+
+
     .filter__dropdown:hover .filter__dropdown-content {
+        display: flex;
+    }
+
+    .filter__dropdown:hover .filter__dropbtn-icon {
+        fill: #da5569;
+    }
+
+    .display-block {
         display: block;
     }
 }
