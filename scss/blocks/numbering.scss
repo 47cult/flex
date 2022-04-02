@@ -1,0 +1,60 @@
+.numbering {
+    display: flex;
+    justify-content: center;
+}
+
+.numbering__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 283px;
+    min-height: 43px;
+    border: 1px solid #EBEBEB;
+    margin: 0 0 96px 0;
+}
+
+.numbering__icon {
+    padding: 0 18px 0 18px;
+}
+
+.numbering__icon:hover {
+    fill: #EF5B70;
+}
+
+.numbering__icon:active {
+    fill: #EBEBEB;
+}
+
+.numbering__link {
+    text-decoration: none;
+    @include font(16px, 19px, 300);
+    color: #EBEBEB;
+    padding: 0 18px 0 0;
+}
+
+.numbering__link:hover {
+    color: #EF5B70;
+}
+
+.numbering__link:active {
+    color: #993846;
+}
+
+.numbering__last {
+    padding: 0;
+}
+
+.numbering__end {
+    padding: 0;
+}
+
+.numbering__text {
+    color: #EBEBEB;
+}
+
+.numbering__visited {
+    color: #EF5B70;
+    cursor: not-allowed;
+    pointer-events: none;
+}
