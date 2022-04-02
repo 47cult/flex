@@ -111,6 +111,7 @@
         max-height: 32px;
         margin: 27px 0 19px 0;
         outline: none;
+        position: relative;
 
         @include phone {
             display: none;
@@ -164,6 +165,15 @@
 
     .header__basket-count:hover {
         color: $pink-color;
+    }
+
+    .header__basket-wrp {
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        width: 400px;
+        min-height: 200px;
+        background-color: antiquewhite;
     }
 
     .header__menu-wrp {
